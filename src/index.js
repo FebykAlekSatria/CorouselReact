@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./container/landingpage/Index";
 import InfoProfil from "./container/infoProfil/Index";
-import Home from "./container/home/index";
+import Home from "./container/home/Index";
 import SellerDaftarJual from "./container/sellerDaftarJual/index";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -16,12 +16,13 @@ import SellerHalamanProduk from "./container/SellerHalamanProduk/index";
 import FormInfo from "./components/FormInfo";
 import InfoProduk from "./container/infoProduk/index";
 import InfoPenawaran from "./container/infoPenawaran/index";
+import Corousel from "./container/Corousel";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={<Corousel />} />
       <Route path="/home" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
